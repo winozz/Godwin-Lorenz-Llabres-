@@ -1,0 +1,98 @@
+//1. Given an array and a value Y, count and print the number of array values greater than Y.
+
+function  arr(array){
+  var count = 0;
+  var y = 10 
+  for(var i=0; i < array.length; i++) {
+        
+        if ( array[i] > y) {
+            count+=1;  
+        } 
+        
+  }
+  return count;
+
+}
+x = arr([12, 2, 23, 10, 12]) ;
+console.log("Number of array index greater than  Y: ", x);
+
+//2. 
+
+function  arr(array){
+ 
+  var sum = 0;
+  var maxArr = array[1];
+  var minArr = array[1];
+  var y = 10 
+  for(var i=0; i < array.length; i++) {
+        sum = sum + array[i];
+        if ( array[i] > maxArr) {
+            maxArr= array[i];
+            
+        }
+        if ( array[i] < minArr) {
+            minArr= array[i];
+            
+        }        
+        
+} 
+
+var average= sum / array.length;
+    console.log('Average: ', average);     
+    console.log('Max Value: :', maxArr);
+    console.log('Min Value: ', minArr);    
+
+}
+
+ x = arr([12, 2, 23, 10, 12]) ;
+
+// 3. 
+function  arr(array){
+
+    var list = [];
+      for(var i=0; i < array.length; i++) {
+            
+            if( array[i] < 0 ) {
+               list.push("Dojo");
+            }    else   {
+                list.push(array[i]);
+            }
+            
+    } 
+    return list;
+
+
+
+}
+
+ x = arr([12, 2, -23, 10, -12]) ;
+console.log(x)
+
+
+//4
+
+function  remove(x, y){
+
+    var list = [ 2, 23, 27, 35, 60, 69];
+    var newList = []; 
+         for(var i=0; i < list.length; i++) {
+          
+          if( i < x || i > y) {
+                newList.push(list[i]);
+          
+          }  
+            
+            
+        }  
+
+    return newList;
+
+
+
+}
+
+ x = remove(2,4) ;
+console.log(x)
+
+
+
