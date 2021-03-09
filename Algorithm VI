@@ -1,0 +1,72 @@
+//1.
+function resetNegatives(array){
+
+    var list = [];
+    for (var i = 0; i < array.length; i++) {
+        if (array[i] < 0 ){
+            array[i] = 0 ;
+            list.push(array[i]);
+        
+        } else {
+            list.push(array[i]);
+        }
+    
+    
+    }
+    return list;
+
+
+}
+
+displayArr = resetNegatives( [-1, 2, -2, 9] );
+ 
+ console.log(displayArr);
+ 
+ 
+ //2.
+ 
+array = [1,2,3];
+var list = [];
+
+for ( var i = 1 ; i < array.length; i++) {
+    
+    list.push(array[i]);
+    if (i == array.length-1){
+        list.push(0);
+    }   
+    
+}
+console.log(list);
+
+//3
+
+array = [1,2,3];
+var list = [];
+
+for (var i = array.length-1; i >=0; i--){
+
+    list.push(array[i]);
+
+
+}
+console.log('Reversed array: ',list);
+
+
+// 4
+
+function repeatTwice (arr){
+
+var list = [];
+    for (var i = 0; i < arr.length; i++) {
+
+      
+      list.push(arr[i]);
+      list.push(arr[i]);
+    }
+    return list;
+    
+
+}
+
+displayArr = repeatTwice ( [ 4, "Ulysses", 42, false ]);
+console.log( displayArr);
