@@ -1,4 +1,50 @@
-function sUmAlL(a, b)    {
-   var c =a+b
-return c;
+//Example 1
+//Function that displays the sum of a and b
+function add(a, b) {
+   var sum =a+b
+   
+   return sum;
 }
+
+useSumFunction = (1,1);
+console.log ('Sum of a and b :', useSumFunction);
+
+// Example 2
+//Function that displays the answer using both operation: Addition and Subtraction
+function addSub(a,b,c,d,e) {
+    var x = a+b;
+    var y = c+2;
+    var z = d-e
+    
+    return x-y+z; 
+}
+displayAnswer = addSub(3,5,10,3,7);
+console.log('Answer: ', displayAnswer);
+
+//Example 3
+
+function sum(a,b, c,d,e) {
+   
+   //return the sum of b and d 
+   return b+d; 
+}
+displaySum= sum(1,2,3,4, 5);
+console.log(' Sum of b and d; ', displaySum); 
+
+
+// Example 4
+
+function compare(a,b) {
+  if(a<b) {
+    console.log('b  is larger than a');
+    return b;
+   
+    
+  }  else { 
+        console.log('a  is larger than b');
+        return a;
+
+    } 
+}
+resultComparison = compare(2,   3 );
+console.log("The larger value is: ", resultComparison);
